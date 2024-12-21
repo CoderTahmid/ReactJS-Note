@@ -1,29 +1,25 @@
 import { useState } from 'react'
 import './App.css'
 import { useEffect } from 'react'
+import { use } from 'react';
+import Posts from './Posts';
 
 function App() {
   return (
     <>
-      <h1>King</h1>
+      <h3>React core concepts recap</h3>
+      <ol>
+        <li>Components</li>
+        <li>JSX</li>
+        <li>Props</li>
+        <li>State</li>
+        <li>Load Data</li>
+      </ol>
+      <hr />
+      <Posts></Posts>
     </>
   )
 };
-
-// function Users() {
-//   const [users, setUsers] = useState([]);
-
-//   useEffect(() => {
-//     fetch("https://jsonplaceholder.typicode.com/users")
-//       .then(res => res.json())
-//       .then(data => console.log(data));
-//   }, []);
-//   return (
-//     <div>
-
-//     </div>
-//   );
-// };
 
 export default App
 
