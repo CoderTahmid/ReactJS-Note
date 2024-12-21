@@ -59,6 +59,13 @@ function Friends() {
     An empty array tells React that the effect doesn't depend on any state or 
     prop values that might change over time. Therefore, React will run the effect once right after the 
     component is mounted (first rendered) and not on future updates
+
+    Always je dependency hishabe ekta empty array e hobe emon na
+    amra jei data gulo ekhane load korar try kortasi sheta basically ekta array format e ase
+    er jonnei empty array dewa hoise
+    jodi object akare ashto tahole empty object dewa hoito
+    string akare ashle empty string
+    number akare ashle 0
     */
 
   return (
