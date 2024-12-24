@@ -5,20 +5,28 @@ import { use } from 'react';
 import Posts from './Posts';
 
 function App() {
+
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    let newCount = count + 1;
+    setCount(newCount);
+  };
+
   return (
     <>
-      <h3>React core concepts recap</h3>
-      <ol>
-        <li>Components</li>
-        <li>JSX</li>
-        <li>Props</li>
-        <li>State</li>
-        <li>Load Data</li>
-      </ol>
-      <hr />
-      <Posts></Posts>
+      <MyButton count={count} onClick={handleClick}></MyButton>
+      <MyButton count={count} onClick={handleClick}></MyButton>
     </>
   )
+};
+
+function MyButton({ count, onClick }) {
+  return (
+    <>
+      <button onClick={onClick}>Button clicked {count} </button>
+    </>
+  );
 };
 
 export default App
