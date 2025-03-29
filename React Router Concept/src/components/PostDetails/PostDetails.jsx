@@ -1,10 +1,17 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 const PostDetails = () => {
 
     const post = useLoaderData();
     const {id, title, body} = post;
     const navigate = useNavigate();
+    const params = useParams(); // we are using useParams hook
+
+    console.log(params); 
+        /*
+        output : {postId: '2'}
+        mane muloto ei hook use kore amra oi id ta ke get korte parbo arki
+        */
 
     const handleGoBack = () => {
         navigate(-1);
