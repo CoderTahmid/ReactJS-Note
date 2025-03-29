@@ -14,6 +14,13 @@ const Post = ({ post }) => {
 
     const handleShowDetail = () => {
         navigate(`/posts/${id}`);
+        /*
+        <Link></Link>
+        e jemon amra "to" attribute diye link dei je kothay jawa lagbe
+        thik temon e 
+        navigate e link dibo 
+        tahole oi button e click korle ei function ta call hbe and oidike jabe
+        */
     }; 
 
     return (
