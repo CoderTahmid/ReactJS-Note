@@ -17,6 +17,12 @@ const router = new createBrowserRouter([
     path: "/",
     element: <Home></Home>,
     errorElement: <ErrorPage></ErrorPage>,
+      /*
+      error page e ki ashbe sheta set kora jay ebhabe
+      like kono click'r por error ashlo 
+      tahole sekhane screen e ki dekhabe 
+      oita customize kore set kora jayh arki
+      */
     children: [
       {
         path: "/about",
