@@ -1,10 +1,19 @@
-import { Outlet, useNavigation } from "react-router-dom";
+import { Outlet, useLocation, useNavigation } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
 const Home = () => {
 
     const navigation = useNavigation();
+    const location = useLocation(); // ei hook muloto show kore user kon route e geseh 
+
+    console.log(location);
+        /*
+        when home button e click kora hoy tokhon 
+        {pathname: '/', search: '', hash: '', state: null, key: '5o3sirkn'}
+        eta output ashe
+        mane ekhane show kora hocche je eta kon route e ache
+        */
 
     return (
         <div>
