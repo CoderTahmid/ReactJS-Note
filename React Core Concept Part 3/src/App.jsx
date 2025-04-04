@@ -27,11 +27,19 @@ function App() {
       <ReuseableForm
         formTitle={"Sign Up"}
         handleSubmit={handleSignUpSubmit}>
+          <div>
+            <h2>Sign Up</h2>
+            <p>Please Sign up right now</p>
+          </div>
       </ReuseableForm>
       <ReuseableForm
         formTitle={"Profile Update"}
         submitBtnText={"Update"}
         handleSubmit={handleUpdateProfile}>
+          <div>
+            <h2>Update Profile</h2>
+            <p>Always keep your profile updated</p>
+          </div>
       </ReuseableForm>
     </>
   )

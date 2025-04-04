@@ -1,4 +1,11 @@
-const ReuseableForm = ({ formTitle, submitBtnText = "Submit", handleSubmit }) => {
+const ReuseableForm = ({ submitBtnText = "Submit", handleSubmit, children }) => {
+
+    /*
+    About this children prop
+    ei children prop dile shei ei component ta jekhane declare hbeh
+    shetar peter moddhe 
+    orthat children hishabe ja e dewa hbeh ty e pawa jabe
+    */
 
     const handleLocalSubmit = e => {
         e.preventDefault();
@@ -13,7 +20,13 @@ const ReuseableForm = ({ formTitle, submitBtnText = "Submit", handleSubmit }) =>
 
     return (
         <div>
-            <h2>{formTitle}</h2>
+            {children}
+            {/*
+            ekhane ja hbe ta holo je
+            App.jsx'r moddhe declear kora hoise ei <ReuseableForm /> component
+            ekhn etar bhitore mane child hishabe jei code gula dewa hoise shegula ekhane ashbe arki
+            etai hocche usage of children prop
+            */}
             <form onSubmit={handleLocalSubmit}>
                 <input type="text" name="name" />
                 <br />
